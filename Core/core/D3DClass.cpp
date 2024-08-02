@@ -208,6 +208,78 @@ bool D3DClass::Initialize(
 	{
 		swapChainDesc.Windowed = true;
 	}
+
+	// 스캔 라인 순서 및 배율을 지정되지 않음으로 설정합니다
+	swapChainDesc.BufferDesc.ScanlineOrdering = DXGI_MODE_SCANLINE_ORDER_UNSPECIFIED;
+	swapChainDesc.BufferDesc.Scaling = DXGI_MODE_SCALING_UNSPECIFIED;
+
+	// 프레젠테이션 후에는 백 버퍼 내용을 폐기합니다.
+	swapChainDesc.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
+
+	// 고급 플래그 설정하지 않기
+	swapChainDesc.Flags = 0;
+
+	// Set the feature level to DirectX 11.
+	featureLevel = D3D_FEATURE_LEVEL_11_0;
+
+	// Create the swap chain, Direct3D device, and Direct3D device context.
+	result = D3D11CreateDeviceAndSwapChain(
+		NULL,
+		D3D_DRIVER_TYPE_HARDWARE,
+		NULL,
+		0,
+		&featureLevel,
+		1,
+		D3D11_SDK_VERSION,
+		&swapChainDesc,
+		&m_SwapChain,
+		&m_Device,
+		NULL,
+		&m_DeviceContext
+	);
+	if (FAILED(result))
+	{
+		return (false);
+	}
+
+	// Get the pointer to the back buffer.
+	result = m_SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&backBufferPtr);
+	if (FAILED(result))
+	{
+		return (false);
+	}
+
+	// Create the render target view with the back buffer pointer.
+	result = m_Device->CreateRenderTargetView(backBufferPtr, NULL, &m_RenderTargetView);
+	if (FAILED(result))
+	{
+		return (false);
+	}
+
+	// Release pointer to the back buffer as we no longer need it
+	backBufferPtr->Release();
+	backBufferPtr = nullptr;
+
+	// Initialize the description of the depth buffer.
+	ZeroMemory(&depthBufferDesc, sizeof(depthBufferDesc));
+
+	// Set up the description of the depth buffer.
+	depthBufferDesc.Width = screenWidth;
+	depthBufferDesc.Height = screenHeight;
+	depthBufferDesc.MipLevels = 1;
+	depthBufferDesc.ArraySize = 1;
+	depthBufferDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+	depthBufferDesc.SampleDesc.Count = 1;
+	depthBufferDesc.SampleDesc.Quality = 0;
+	depthBufferDesc.Usage = D3D11_USAGE_DEFAULT;
+	depthBufferDesc.BindFlags = D3D11_BIND_DEPTH_STENCIL;
+	depthBufferDesc.CPUAccessFlags = 0;
+	depthBufferDesc.MiscFlags = 0;
+
+	// Initialize the description of the stencil state.
+
+
+	return (true);
 }
 
 void D3DClass::Shutdown()
