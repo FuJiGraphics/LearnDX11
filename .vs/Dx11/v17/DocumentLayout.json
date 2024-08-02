@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dev\\ZVLab\\Dx11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\D3DClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\D3DClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\D3DClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\D3DClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\SystemClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\SystemClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\InputClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\InputClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\ApplicationClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\ApplicationClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\ApplicationClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\ApplicationClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\SystemClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\SystemClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|D:\\Dev\\ZVLab\\Dx11\\Core\\core\\InputClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2175BFAC-A600-4946-88A6-A386E354E579}|Core\\Core.vcxproj|solutionrelative:Core\\core\\InputClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Core.h",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\Core.h",
+              "RelativeDocumentMoniker": "Core\\core\\Core.h",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\Core.h",
+              "RelativeToolTip": "Core\\core\\Core.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-01T00:52:13.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InputClass.h",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\InputClass.h",
+              "RelativeDocumentMoniker": "Core\\core\\InputClass.h",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\InputClass.h",
+              "RelativeToolTip": "Core\\core\\InputClass.h",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-01T02:56:10.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SystemClass.h",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\SystemClass.h",
+              "RelativeDocumentMoniker": "Core\\core\\SystemClass.h",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\SystemClass.h",
+              "RelativeToolTip": "Core\\core\\SystemClass.h",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwCIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-31T07:39:44.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "D3DClass.h",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\D3DClass.h",
+              "RelativeDocumentMoniker": "Core\\core\\D3DClass.h",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\D3DClass.h",
+              "RelativeToolTip": "Core\\core\\D3DClass.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-01T04:39:23.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "D3DClass.cpp",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\D3DClass.cpp",
+              "RelativeDocumentMoniker": "Core\\core\\D3DClass.cpp",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\D3DClass.cpp",
+              "RelativeToolTip": "Core\\core\\D3DClass.cpp",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAcwL8AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-01T04:39:15.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationClass.cpp",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\ApplicationClass.cpp",
+              "RelativeDocumentMoniker": "Core\\core\\ApplicationClass.cpp",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\ApplicationClass.cpp",
+              "RelativeToolTip": "Core\\core\\ApplicationClass.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAFEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-01T04:10:07.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SystemClass.cpp",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\SystemClass.cpp",
+              "RelativeDocumentMoniker": "Core\\core\\SystemClass.cpp",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\SystemClass.cpp",
+              "RelativeToolTip": "Core\\core\\SystemClass.cpp",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAMwIcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-31T07:39:24.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\main.cpp",
+              "RelativeDocumentMoniker": "Core\\main.cpp",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\main.cpp",
+              "RelativeToolTip": "Core\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-31T07:30:16.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationClass.h",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\ApplicationClass.h",
+              "RelativeDocumentMoniker": "Core\\core\\ApplicationClass.h",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\ApplicationClass.h",
+              "RelativeToolTip": "Core\\core\\ApplicationClass.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-01T04:07:54.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InputClass.cpp",
+              "DocumentMoniker": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\InputClass.cpp",
+              "RelativeDocumentMoniker": "Core\\core\\InputClass.cpp",
+              "ToolTip": "D:\\Dev\\ZVLab\\Dx11\\Core\\core\\InputClass.cpp",
+              "RelativeToolTip": "Core\\core\\InputClass.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAMwCQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-01T02:58:03.465Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

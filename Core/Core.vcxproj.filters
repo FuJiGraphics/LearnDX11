@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="core\SystemClass.cpp" />
+    <ClCompile Include="core\InputClass.cpp" />
+    <ClCompile Include="core\ApplicationClass.cpp" />
+    <ClCompile Include="core\D3DClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\SystemClass.h" />
+    <ClInclude Include="core\Core.h" />
+    <ClInclude Include="core\InputClass.h" />
+    <ClInclude Include="core\ApplicationClass.h" />
+    <ClInclude Include="core\D3DClass.h" />
+  </ItemGroup>
+</Project>
