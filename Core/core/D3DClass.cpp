@@ -276,9 +276,72 @@ bool D3DClass::Initialize(
 	depthBufferDesc.CPUAccessFlags = 0;
 	depthBufferDesc.MiscFlags = 0;
 
+	// Create the texture for the depth buffer using the filled out description.
+	result = m_Device->CreateTexture2D(&depthBufferDesc, NULL, &m_DepthStencilBuffer);
+	if (FAILED(result))
+	{
+		return (false);
+	}
+
 	// Initialize the description of the stencil state.
+	ZeroMemory(&depthStencilDesc, sizeof(depthStencilDesc));
 
+	// Set up the description of the stencil state.
+	depthStencilDesc.DepthEnable = true;
+	// DepthWriteMask는 D3D11_DEPTH_WRITE_ZERO or ALL로 나뉩니다.
+	// ZERO는 깊이 버퍼를 갱신하지 않고 대신 판정은 계속합니다.
+	// ALL은 깊이버퍼와 스텐실버퍼를 모두 통과한 픽셀의 깊이가 
+	// 깊이버퍼에 새로 갱신됩니다.
+	depthStencilDesc.DepthWriteMask = D3D11_DEPTH_WRITE_MASK_ALL;
+	// 원본 데이터가 대상 데이터보다 작으면 비교가 통과됩니다.
+	// 깊이 값이 작을수록 가까이 있다.
+	depthStencilDesc.DepthFunc = D3D11_COMPARISON_LESS;
 
+	depthStencilDesc.StencilEnable = true;
+	depthStencilDesc.StencilReadMask = 0xFF;
+	depthStencilDesc.StencilWriteMask = 0xFF;
+
+	// Stencil operations if pixel is front-facing.
+	depthStencilDesc.FrontFace.StencilFailOp = D3D11_STENCIL_OP_KEEP;
+	depthStencilDesc.FrontFace.StencilDepthFailOp = D3D11_STENCIL_OP_INCR;
+	depthStencilDesc.FrontFace.StencilPassOp = D3D11_STENCIL_OP_KEEP;
+	depthStencilDesc.FrontFace.StencilFunc = D3D11_COMPARISON_ALWAYS;
+
+	// Create the depth stencil state.
+	result = m_Device->CreateDepthStencilState(&depthStencilDesc, &m_DepthStencilState);
+	if (FAILED(result))
+	{
+		return (false);
+	}
+
+	// Set the depth stencil state.
+	m_DeviceContext->OMSetDepthStencilState(m_DepthStencilState, 1);
+
+	/*-------------------------------------------------------------------------------------------
+	* 다음으로 만들어야 할 것은 뎁스 스텐실 버퍼의 뷰에 대한 설명입니다. 
+	* 이렇게 하면 Direct3D가 뎁스 버퍼를 뎁스 스텐실 텍스처로 사용한다는 것을 알 수 있습니다. 
+	* 설명을 작성한 후 CreateDepthStencilView 함수를 호출하여 생성합니다.
+	-------------------------------------------------------------------------------------------*/
+	
+	// 뎁스 스텐실 뷰를 초기화합니다.
+	ZeroMemory(&depthStencilViewDesc, sizeof(depthStencilViewDesc));
+
+	// 뎁스 스텐실 뷰의 구조체를 설정합니다.
+	depthStencilViewDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+	depthStencilViewDesc.ViewDimension = D3D11_DSV_DIMENSION_TEXTURE2D;
+	depthStencilViewDesc.Texture2D.MipSlice = 0;
+
+	// 뎁스 스텐실 뷰를 만듭니다.
+	result = m_Device->CreateDepthStencilView(m_DepthStencilBuffer, &depthStencilViewDesc, &m_DepthStencilView);
+	if (FAILED(result))
+	{
+		return (false);
+	}
+
+	/*-------------------------------------------------------------------------------------------
+	* 또한 Direct3D가 클립 공간 좌표를 렌더링 대상 공간에 매핑할 수 있도록 
+	* 뷰포트를 설정해야 합니다. 이 값을 창의 전체 크기로 설정합니다.
+	-------------------------------------------------------------------------------------------*/
 	return (true);
 }
 
