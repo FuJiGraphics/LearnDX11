@@ -1,4 +1,0 @@
-﻿  D3DClass.cpp
-D:\Dev\ZVLab\Dx11\Core\core\D3DClass.cpp(123,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-D:\Dev\ZVLab\Dx11\Core\core\D3DClass.cpp(514,86): warning C4244: '인수': 'float'에서 'UINT8'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Core.vcxproj -> D:\Dev\ZVLab\Dx11\x64\Debug\Core.exe

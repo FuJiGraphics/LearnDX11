@@ -6,6 +6,7 @@
     <ClCompile Include="core\InputClass.cpp" />
     <ClCompile Include="core\ApplicationClass.cpp" />
     <ClCompile Include="core\D3DClass.cpp" />
+    <ClCompile Include="core\ColorShaderClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\SystemClass.h" />
@@ -13,5 +14,10 @@
     <ClInclude Include="core\InputClass.h" />
     <ClInclude Include="core\ApplicationClass.h" />
     <ClInclude Include="core\D3DClass.h" />
+    <ClInclude Include="core\ColorShaderClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shader\Color_vs.hlsl" />
+    <FxCompile Include="shader\Color_ps.hlsl" />
   </ItemGroup>
 </Project>

@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="core\ApplicationClass.cpp" />
+    <ClCompile Include="core\ColorShaderClass.cpp" />
     <ClCompile Include="core\D3DClass.cpp" />
     <ClCompile Include="core\InputClass.cpp" />
     <ClCompile Include="core\SystemClass.cpp" />
@@ -135,10 +136,27 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\ApplicationClass.h" />
+    <ClInclude Include="core\ColorShaderClass.h" />
     <ClInclude Include="core\Core.h" />
     <ClInclude Include="core\D3DClass.h" />
     <ClInclude Include="core\InputClass.h" />
     <ClInclude Include="core\SystemClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shader\Color_ps.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="shader\Color_vs.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </FxCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
